@@ -1,0 +1,26 @@
+<!DOCTYPE hmtl>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<title>Learning Angular JS</title>
+</head>
+<body>
+	<h1>Hello Angular JS</h1>
+	<div ng-app="" ng-init="firstName='Mayuresh'">
+	<p>Angular expressions is: {{ 1+2+3+4 }} </p>
+	<p>What you want to say: <input type="text" ng-model="txt" placeholder="write here..." name=""></p>
+	<h1>You wrote: {{txt}} </h1><br>
+	<p ng-bind="txt"></p>
+	<p ng-bind="firstName"></p>
+	<h1 ng-bind="txt"></h1>
+	<h1 ng-bind="firstName"></h1>
+	<p>Angular expressions {{This is an angular JS expression!}} </p>
+	
+	</div>
+
+
+
+
+	
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+
+<h1> {{hex}} </h1>
+</div>
+
+
+<script>
+	
+	var app = angular.module('myApp', []);
+
+	
+	app.service('hexafy', function(){
+		this.myFunc = function (x){
+			return x.toLowerCase();
+		}
+		
+	});
+
+
+	app.controller('myCtrl', function($scope, hexafy){
+		$scope.hex = hexafy.myFunc('ABCD');
+	});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

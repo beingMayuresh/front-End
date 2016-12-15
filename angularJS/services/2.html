@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+<h1> {{myHeader}} </h1>
+	
+
+
+
+</div>
+
+
+<script>
+	var app = angular.module('myApp', []);
+	app.controller('myCtrl', function($scope, $timeout){
+
+		$scope.myHeader = "Hello Recruiter!";
+		$timeout(function(){
+			$scope.myHeader = "Welcome to my page!";
+		},1500);
+	});
+	
+</script>
+
+</body>
+</html>

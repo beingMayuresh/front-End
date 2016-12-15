@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<form ng-app="" name="myForm">
+
+Email:<input type="email" name="emailAdd" ng-model="text" required>
+<span ng-show="myForm.emailAdd.$error.email">enter correct address</span>
+
+<p></p>
+{{myForm.emailAdd.$valid}}
+{{myForm.emailAdd.$dirty}}
+{{myForm.emailAdd.$touched}}
+
+</form>
+
+
+</body>
+</html>
